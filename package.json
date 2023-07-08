@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start:dev": "nodemon server.js",
-        "start:prod": "pm2 start server.js \"grades app\" --watch",
+        "start:prod": "pm2-runtime start server.js \"grades app\" --watch",
         "stop:prod": "pm2 stop server.js \"grades app\"",
         "import:grades": "node data/import-studentGrade.js --import",
         "delete:grades": "node data/import-studentGrade.js --delete"
