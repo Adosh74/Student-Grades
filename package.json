@@ -1,0 +1,37 @@
+{
+    "name": "student-grade",
+    "version": "1.0.0",
+    "description": "This app for grades of Badr Al-Islam Languages School students",
+    "main": "index.js",
+    "scripts": {
+        "start:dev": "nodemon server.js",
+        "start:prod": "pm2 start server.js \"grades app\" --watch",
+        "stop:prod": "pm2 stop server.js \"grades app\"",
+        "import:grades": "node data/import-studentGrade.js --import",
+        "delete:grades": "node data/import-studentGrade.js --delete"
+    },
+    "author": "Mohamed Shebl",
+    "license": "ISC",
+    "devDependencies": {
+        "eslint": "^8.44.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2",
+        "nodemon": "^2.0.22",
+        "prettier": "^2.8.8"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2",
+        "mongoose": "^5.13.19",
+        "morgan": "^1.10.0"
+    }
+}

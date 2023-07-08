@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Badr Al-Islam</title>
+        <link rel="icon" href="/fav.png" />
+        <link rel="stylesheet" href="/home.css" />
+
+        <style>
+            /* CSS styles go here */
+            body {
+                font-family: Arial, sans-serif;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th,
+            td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            .result-pass {
+                color: green;
+                font-weight: bold;
+            }
+            .result-fail {
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- HTML content goes here -->
+        <a href="/" style="text-decoration: none">
+            <header>
+                <a href="/" class="logo"><img src="/logo.jpg" alt="" /></a>
+                <h1>Badr Al-Islam Languages School</h1>
+            </header>
+        </a>
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <td><%= grade.Name %></td>
+            </tr>
+            <tr>
+                <th>School Name</th>
+                <td><%= grade.School_Name %></td>
+            </tr>
+            <tr>
+                <th>School Year</th>
+                <td><%= grade.School_Year %></td>
+            </tr>
+            <tr>
+                <th>Term</th>
+                <td><%= grade.Term %></td>
+            </tr>
+            <tr>
+                <th>Seating Number</th>
+                <td><%= grade.Seating_Number %></td>
+            </tr>
+            <tr>
+                <th>Grade</th>
+                <td><%= grade.Grade %></td>
+            </tr>
+            <tr>
+                <th>Arabic</th>
+                <td><%= grade.Arabic %></td>
+            </tr>
+            <tr>
+                <th>Math</th>
+                <td><%= grade.Math %></td>
+            </tr>
+            <tr>
+                <th>Social</th>
+                <td><%= grade.Social %></td>
+            </tr>
+            <tr>
+                <th>Science</th>
+                <td><%= grade.Science %></td>
+            </tr>
+            <tr>
+                <th>English</th>
+                <td><%= grade.English %></td>
+            </tr>
+            <tr>
+                <th>Religion</th>
+                <td><%= grade.Religion %></td>
+            </tr>
+            <tr>
+                <th>Result</th>
+                <td class="result-pass"><%= grade.Result %></td>
+            </tr>
+        </table>
+    </body>
+</html>

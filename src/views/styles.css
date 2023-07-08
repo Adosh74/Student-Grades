@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+a {
+    color: #0071c5;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header h1 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Styles */
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.btn {
+    background-color: #0071c5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #005b9e;
+}
+
+/* Services Styles */
+.services {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+}
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.service img {
+    margin-bottom: 20px;
+}
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.service p {
+    text-align: center;
+}
+
+/* Testimonials Styles */
+.testimonials {
+    background-color: #0071c5;
+    color: #fff;
+    padding: 80px 0;
+}
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.testimonial img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.testimonial blockquote {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.testimonial cite {
+    font-size: 20px;
+    font-style: normal;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+}
+footer p {
+    font-size: 16px;
+    margin: 0;
+}
