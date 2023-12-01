@@ -4,7 +4,7 @@ exports.getStudentGrade = async (req, res) => {
     try {
         const { id } = req.params;
 
-        const grade = await StudentGrade.findOne({ National_ID: id }).select(
+        const grade = await StudentGrade.findOne({ ID: id }).select(
             '-National_ID -__v -_id',
         );
 
