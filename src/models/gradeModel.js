@@ -1,67 +1,82 @@
 const mongoose = require('mongoose');
 
 const studentGradeSchema = mongoose.Schema({
-    School_Name: {
-        type: String,
-        required: [true, 'A grade must have a School_Name'],
-        trim: true,
-    },
-    School_Year: {
-        type: String,
-        required: [true, 'A grade must have a School_Year'],
-        trim: true,
-    },
-    Term: {
-        type: String,
-        required: [true, 'A grade must have a Term'],
-        trim: true,
-    },
     Name: {
         type: String,
-        required: [true, 'A grade must have a Name'],
+        required: true,
         trim: true,
     },
-    Seating_Number: {
+    ID: {
         type: Number,
-        required: [true, 'A grade must have a Seating_Number'],
+        required: true,
     },
-    National_ID: {
-        type: Number,
-        required: [true, 'A grade must have a National_ID'],
+    division: {
+        type: String,
+    },
+    Theresult: {
+        type: String,
+        required: true,
     },
     Grade: {
         type: String,
-        required: [true, 'A grade must have a Grade'],
-        trim: true,
+        required: true,
+    },
+    Class: {
+        type: Number,
+        required: true,
     },
     Arabic: {
         type: Number,
-        required: [true, 'A grade must have a Arabic'],
+        required: true,
+    },
+    E_OL: {
+        type: Number,
+    },
+    S_language: {
+        type: Number,
+        required: true,
     },
     Math: {
         type: Number,
-        required: [true, 'A grade must have a Math'],
     },
-    Social: {
+    Math_2: {
         type: Number,
-        required: [true, 'A grade must have a Social'],
     },
-    Science: {
+    Chemistry: {
         type: Number,
-        required: [true, 'A grade must have a Science'],
     },
-    English: {
+    physics: {
         type: Number,
-        required: [true, 'A grade must have a English'],
     },
-    Religion: {
+    Bio: {
         type: Number,
-        required: [true, 'A grade must have a Religion'],
     },
-    Result: {
-        type: String,
-        required: [true, 'A grade must have a Result'],
-        trim: true,
+    History: {
+        type: Number,
+    },
+    Geography: {
+        type: Number,
+    },
+    Psychology: {
+        type: Number,
+    },
+    Philosophy: {
+        type: Number,
+    },
+    Computer: {
+        type: Number,
+    },
+    Religious: {
+        type: Number,
+    },
+    National_Education: {
+        type: Number,
+    },
+    E_0L: {
+        type: Number,
+    },
+    E_AL: {
+        type: Number,
     },
 });
 
