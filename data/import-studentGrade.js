@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const StudentGrade = require('../src/models/gradeModel');
 
-dotenv.config({ path: './config.env' });
+dotenv.config({ path: './.env' });
 
 const DB = process.env.DATABASE.replace(
     '<PASSWORD>',
